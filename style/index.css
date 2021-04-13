@@ -53,34 +53,32 @@ body{
 }
 
 /* header */
-.header{
-    background-color: #696773;
-    border-bottom: 1px solid black;
-}
-.header{
+
+nav{
     display:flex;
     flex-wrap: wrap;
-}
-.up{
-    width:80%;
     background-color: #696773;
     color:#363946;
-    font-weight: bold;
-    font-size: 150%;
+    width: 100%;
 }
-.down{
-    width:60%;
+.h1Name{
     background-color: #696773;
+    width:100%;
+    font-size: 200%;;
 }
-.top-btn {
+.links a{
+    background-color: #696773;
     padding: 1% 3%;
     background: #819595; 
     color: #363946;;
-    border-left:1px solid #000;
-    border-right:2px solid #000;
-    border-top: 2px solid #000;
-  }
-
+    border:1px solid #000;
+}
+.links{
+    display: flex;
+    background-color: #696773;
+    width:100%;
+    margin: 0 2%;
+}
 
 /* section top */
 .top{
@@ -194,28 +192,31 @@ min-width scales up, this is for mobile first design
 @media(max-width:500px){
     /* nav */
 
-    .header .down{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid black;
-        align-items: center;
-    }    
-    
-    
-    .name h2{
-        font-weight: bold;
-        font-size: 200%;
+nav{
+    flex-direction: column;
+    align-items: center;
     }
-    .gallery{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .gallery div{
-        width:41%;
-        margin: 2% 0;
-    }
-    .gallery p{
-        font-size: 100%;
-    }
+.h1Name{
+    font-size: 200%;
+}
+nav .links{
+    flex-direction: column;
+    align-items: center;
+}  
+.name h2{
+    font-weight: bold;
+    font-size: 200%;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery div{
+    width:41%;
+    margin: 2% 0;
+}
+.gallery p{
+    font-size: 100%;
+}
 }
